@@ -1,0 +1,12 @@
+---
+  - name: AnsibleUser
+    hosts: rpis
+    tasks:
+      - name: Ensure Ansible User and password exists
+        become: yes
+        user:
+          name: ansible
+          password: #Set a Password for the Ansible User here, Must be encrypted to store directly in the playbook, or setup Ansible-Vault
+          groups: sudo
+          create_home: yes
+          expires: -1

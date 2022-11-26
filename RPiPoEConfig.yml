@@ -1,0 +1,14 @@
+---
+  - name: RpiPoEControl
+    hosts: rpis
+    tasks:
+      - name: Ensure PoE-HAT Fan Configuration set on all Pis
+        become: yes
+        ansible.builtin.blockinfile:
+          path: /boot/config.txt
+          block: |
+            # PoE Hat Fan Speeds
+            dtparam=poe_fan_temp0=50000
+            dtparam=poe_fan_temp1=60000
+            dtparam=poe_fan_temp2=70000
+            dtparam=poe_fan_temp3=80000

@@ -1,0 +1,7 @@
+---
+  - name: RebootPis
+    hosts: rpis
+    tasks:
+      - name: Reboot Pis andrespond when up
+        ansible.builtin.reboot:
+          
