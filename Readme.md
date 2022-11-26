@@ -16,4 +16,4 @@ I will be getting Ansible Vault set up here soon to make credential management a
 I am looking at Kubernetes and other  container  platforms to get started on the Pi and help me not just wildly commit resources
 For now I am learning about the Pi's functions and just getting the hang of what I can do with a small linux box with resource limits forced on me vs being able to reassign some pretty generous resources from a larger server. 
 
-If you actually found these and they helped, great! Thanks for checking it out and I'm more than welcome to input. 
+If you actually found these and they helped, great! Thanks for checking it out and I'm more than welcoming to input. 
